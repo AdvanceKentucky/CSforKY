@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>blog sidebar</title>
+
+</head>
+
+<body>
+
+    <!-- begin quote card -->
+
+    <div class="card border mb-3 p-3 bg-warning ">
+
+        <div class="card-text text-secondary">
+
+            <h5><sup><i class="fas fa-quote-left"></i></sup> Imagination is more important than knowledge.  For knowledge is limited, whereas imagination embraces the entire world, stimulating progress, giving birth to evolution. <sup><i class="fas fa-quote-right"></i></sup></h5>
+
+        </div>
+
+        <div class="card-footer bg-secondary text-light">- Albert Einstein</div>
+
+    </div>
+
+    <!-- begin categories card -->
+
+    <div class="card border border-warning mb-3 p-3">
+
+        <div class="card-title"><h3>Categories</h3></div>
+
+        <div class="card-text">
+
+            <ul>
+
+                <cms:folders masterpage='blog.php'>
+
+                    <li><a href="<cms:show k_folder_link />"><cms:show k_folder_title /></a></li>
+
+                </cms:folders>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- end of Categories card -->
+
+
+
+    <!-- begin latest news -->
+
+    <cms:if k_is_page>
+
+        <div class="card border border-success mb-3 p-3">
+
+            <div class="card-title"><h3>Latest News</h3></div>
+
+            <div class="card-text">
+
+            <ul>
+
+                <cms:pages masterpage='blog.php' limit='4'>
+
+                    <li><a href="<cms:show k_page_link />"><cms:show k_page_title /></a></li>
+
+                </cms:pages>
+
+            </ul>
+
+            </div>
+
+        </div>
+
+    </cms:if>
+
+    
+
+    <!-- end latest news -->
+
+
+
+    <!-- archives -->
+
+    <div class="card border border-info mb-3 p-3">
+
+        <div class="card-title"><h3>Archives</h3></div>
+
+        <div class="card-text">
+
+        <ul>
+
+            <cms:archives masterpage='blog.php' >
+
+                <li><a href="<cms:show k_archive_link />" ><cms:date k_archive_date format="F Y" /></a></li>
+
+            </cms:archives>
+
+        </ul>
+
+        </div>
+
+    </div>
+
+    <!-- end archives -->
+
+</body>
+
+</html>

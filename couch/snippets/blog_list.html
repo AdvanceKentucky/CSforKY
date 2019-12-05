@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Karla|Spectral" rel="stylesheet">
+
+	<!-- bootstrapCDN -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="../../css/style.css" />
+	<link rel="stylesheet" href="../../css/fixed.css">
+	<link rel="stylesheet" href="../../css/news-page.css">
+
+	<title>Computer Science for Kentucky</title>
+</head>
+
+<body>
+	<cms:embed 'blog_header.html' />
+
+	<section class="bg-secondary py-5">
+		<div class="container">
+            <div class="row my-5 p-3 border-top border-bottom">
+                <h3 class="text-light">The <span class="bg-light text-secondary border p-1">CSforKY</span> blog, 
+                    all your Computer Science news in one place.</h3>
+            </div>
+			<div class="row my-5">
+				<!-- main content -->
+				<div class="col-md-8 bg-light border border-primary p-5">
+                    <cms:pages masterpage='blog.php' 
+                        folder=k_folder_name
+                        start_on=k_archive_date
+                        stop_before=k_next_archive_date
+                        paginate='1' limit='3' >
+						<div class="media">
+                            <!-- post image -->
+                            <img src="<cms:show blog_image />" alt=" " class="mr-3 media-object" style="width:120px;"> 
+                            <div class="media-body">
+                                <!-- post title -->				
+                                <a href="<cms:show k_page_link />"><h5 class="media-heading"><cms:show k_page_title /></h5></a>
+                                <cms:if k_page_foldertitle >
+                                    <cms:set my_category=k_page_foldertitle />
+                                <cms:else />
+                                    <cms:set my_category='Uncategorized' />
+                                </cms:if>
+                                <p><cms:show my_category /> | <cms:date k_page_date format='j M Y' /> <!-- show Comments --> </p>
+                                <!-- post content -->
+                                <cms:excerptHTML count='75' ignore='img'>
+                                    <cms:show blog_content />
+                                </cms:excerptHTML>
+                                <div class="border-bottom pb-3 mb-3">
+                                    <!-- Read More Button -->
+                                    <a href="<cms:show k_page_link />" class="btn btn-primary">Read More...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <cms:if k_paginated_bottom >
+                            <!-- Blog Navigation -->
+                            <div class="row my-3 p-1 border-bottom">
+                                
+                                <div class="col-md-4 text-left">
+                                    <cms:if k_paginate_link_next >
+                                        <a href="<cms:show k_paginate_link_next />" class="btn btn-warning">&lt;&lt; Previous Posts</a>
+                                    </cms:if>
+                                </div>
+                                    
+                                <div class="col-md-4"></div>
+                                <div class="col-md-4 text-right">
+                                    <cms:if k_paginate_link_prev>
+                                        <a href="<cms:show k_paginate_link_prev />" class="btn btn-warning">Newer Posts >></a>
+                                    </cms:if>
+                                </div>
+                            </div>
+                        </cms:if>
+                        
+                    </cms:pages>
+				</div>
+				<!-- end main content -->
+
+				<!-- sidebar -->
+				<div class="col-md-4">
+				<cms:embed 'blog_sidebar.html' />
+				</div>
+				<!-- end sidebar -->
+			</div>
+			<!-- end row -->
+		</div>
+		<!-- end container -->
+	</section>
+
+	<!-- Footer -->
+    <footer class="page-footer bg-primary">
+		<cms:embed 'blog_footer.html' />
+	</footer>
+
+	<!-- full jquery from code.jquery.com minified-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/custom.js"></script>
+    
+
+    <script>
+        //get the year for the copyright
+        $("#year").text(new Date().getFullYear());
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+            } else {
+            document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }  
+    </script>
+</body>
+</html>

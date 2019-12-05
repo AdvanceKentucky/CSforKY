@@ -1,0 +1,13 @@
+{
+    "sqltools.connections": [
+        {
+            "database": "cbaker_couchcms",
+            "dialect": "MySQL",
+            "name": "CS_Pledge",
+            "password": "P@55word!",
+            "port": 3306,
+            "server": "localhost",
+            "username": "cbaker_couch"
+        }
+    ]
+}
