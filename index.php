@@ -53,12 +53,8 @@
                 <a class="dropdown-item" href="#more">Add an Article</a>
                 </div>
               </li>
-              
               <li class="nav-item">
-                  <a class="nav-link" href="#join">Join</a>
-                </li>
-                <li class="nav-item">
-              <a class="nav-link" href="<cms:link 'pledge.php' />">Pledge</a>
+                <a class="nav-link" href="#join">Join</a>
               </li>
             </ul>
           </div>
@@ -71,8 +67,8 @@
         <div class="container-fluid">
           <div class="caption center-block text-center">
               <h1 class="animated bounceInUp">Welcome to Computer Science for Kentucky</h1>
-              <p class="animated bounceInUp delay-1s">We believe every Kentucky student should have access to Computer Science in their schools.</p>
-              <a href="<cms:link 'pledge.php' />"> <button id="pledge_button" class="bg-warning">Take the Pledge!</button></a>
+              <p class="animated bounceInUp delay-.5s">We believe every Kentucky student should have access to Computer Science in their schools.</p>
+              <a href="<cms:link 'pledge.php' />"> <button id="pledge_button" class="animated bounceInUp delay-.5s btn btn-warning">Take the Pledge!</button></a>
           </div> 
         </div>  
       </div>
