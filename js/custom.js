@@ -8,17 +8,17 @@ FusionCharts.ready(function () {
         dataFormat: "json",
         dataSource: {
             "chart": {
-      "showCanvasBorder": "0",
+              "showCanvasBorder": "0",
               "caption": "Kentucky Computer Science Pledges by County",
               "subcaption": " 2019-2020 ",
               "includevalueinlabels": "0",
               "labelsepchar": ": ",
-      "formatNumberScale": "0",
-      "nullEntityColor": "#D7DBDD",
-        <!--  "nullEntityAlpha": "50", -->
+              "formatNumberScale": "0",
+              "nullEntityColor": "#D7DBDD",
+              //  "nullEntityAlpha": "50",
               "entityFillHoverColor": "#FFC300",
               "theme": "fusion"
-            }, <!--End chart initialization-->  
+            }, // End chart initialization 
    
      "colorrange": {
           "color": [{
@@ -558,3 +558,35 @@ FusionCharts.ready(function () {
       }
     }).render();
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+   
+  // county_id is number and name of county
+  
+  county_map = [
+    {
+      county_id: ["001", "Adair"],
+      counter: 0 
+    }
+  ]
+
+  // get county from from
+  document.querySelector('#pledge_form').onsubmit = () => {
+
+    // get county data from form
+    var county = document.querySelector('#county');
+
+    // find county in county_map list
+    var i = 0;
+    for (i in county_map) {
+      if (county_map[i].county_id[1] === county) {
+        county_map[i].counter += 1;
+        break;
+      }
+    }
+
+
+
+
+  }
+})

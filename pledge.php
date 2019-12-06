@@ -106,7 +106,8 @@ have traditionally been underrepresented.</p>
             </div>
         </div>
         <div class="pledge">
-        <form action="" method="POST">
+
+        <form id="pledge_form" action="" method="POST">
             <fieldset class="border p-3 mb-3">
                 <legend class="border p-3 text-center">Take the #CSforKY Pledge</legend>
                 <h3>I hereby pledge to support computer science for all Kentucky students.</h3> 
