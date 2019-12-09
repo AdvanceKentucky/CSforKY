@@ -68,7 +68,7 @@
           <div class="caption center-block text-center">
               <h1 class="animated bounceInUp">Welcome to Computer Science for Kentucky</h1>
               <p class="animated bounceInUp delay-1s">We believe every Kentucky student should have access to Computer Science in their schools.</p>
-              <a href="<cms:link 'pledge_form.php' />"> <button id="pledge_button" class="animated bounceInUp delay-1s btn btn-warning btn-lg"><i class="fas fa-hand-paper fa-2x"></i> Take the Pledge!</button></a>
+              <a href="<cms:link 'pledge_form.php' />"> <button id="pledge_button" class="animated bounceInUp delay-1s btn btn-warning btn-lg"><i class="fas fa-hand-paper"></i> Take the Pledge!</button></a>
           </div> 
         </div>  
       </div>

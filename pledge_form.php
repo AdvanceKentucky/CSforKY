@@ -1,13 +1,4 @@
 <?php require_once('couch/cms.php'); ?>
-<cms:template title='Pledge Form' clonable='1'>
-	<cms:editable name="first" required='1' type='text' />
-	<cms:editable name="last" required='1' type='text' />
-	<cms:editable name="email" required='1' validator='email' type='text' />
-	<cms:editable name="mailinglist" required='1' type='radio' opt_values='Yes=y | No=n' />
-	<cms:editable name="county" required='1' type='dropdown'  opt_values="--- select one --- | Adair | Allen | Anderson | Ballard | Barren/Glasgow/Caverna | Bath | Belle/Middlesboro/Pineville | Boone/Walton-Verona | Bourbon/Paris | Boyd/Fairview/Ashland | Boyle/Danville/KSD | Bracken/Augusta | Breathitt/Jackson | Breckinridge/Cloverport | Bullitt | Butler | Caldwell | Calloway/Murray | Campbell/Bellevue/Dayton/FtThomas | Campbell/Newport/SilverGrove/Southgate | Carlisle | Carroll | Carter | Casey | Christian | Clark | Clay | Clinton | Crittenden | Cumberland | Daviess/Owensboro | Edmonson | Elliott | Estill | Fayette | Fleming | Floyd | Franklin/Frankfort | Fulton | Gallatin | Garrard | Grant/Williamstown | Graves/Mayfield | Grayson | Green | Greenup/Raceland-Worthington/Russell | Hancock | Hardin/WestPoint/Elizabethtown | Harlan | Harrison | Hart | Henderson | Henry/Eminence | Hickman | Hopkins/DawsonSprings | Jackson | Jefferson/Anchorage/KSB | Jessamine | Johnson/Paintsille | Kenton/Beechwood/Covington/Erlanger/Ludlow | Knott | Knox/Barbourville | Larue | Laurel/EastBernstadt | Lawrence | Lee | Leslie | Letcher/Jenkins | Lewis | Lincoln | Livingston | Logan/Russellville | Lyon | McCracken/Paducah | McCreary | McLean | Madison/Berea | Magoffin | Marion | Marshall | Martin | Mason | Meade | Menifee | Mercer/Burgin | Metcalfe | Monroe | Montgomery | Morgan | Muhlenberg | Nelson/Bardstown | Nicholas | Ohio | Oldham | Owsley | Pendleton | Perry/Hazard | Pike/Pikeville | Powell | Pulaski/ScienceHill/Somerset | Robertson | Rockcastle | Rowan | Russell | Scott | Shelby | Simpson | Spencer | Taylor/Campbellsville | Todd | Trigg | Trimble | Union | Warren/BowlingGreen | Washington | Wayne | Webster | Whitley/Corbin/Williamsburg | Wolfe | Woodford | ---------- | Outside KY" />
-	<cms:editable name="age" required='1' type='radio' opt_values="11 years and under=elementary | 12-14 years=middle | 15-19 years=high | over 19 years=adult" />
-	<cms:editable name="role" required='1' type='radio' opt_values="Comunity Member=community | Educator=educator | Student=student | Parent=parent" />
-</cms:template>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,109 +55,281 @@
           </div>
       </div>
     </nav>
-    <div class="container bg-light m-3 p-3 custom-padding offset">     <h1>Kentucky Computer Science Pledge</h1>
-    <p>Computer science drives job growth and innovation throughout our
-    economy and society. Computing occupations are the number 1
-    source of all new wages in the U.S. and make up over half of all
-    projected new jobs in STEM fields, making Computer Science one of
-    the most in-demand college degrees. And computing is used all
-    around us and in virtually every field. It’s foundational knowledge
-    that all students need. But computer science is marginalized
-    throughout education. Only 45% of U.S. high schools teach any
-    computer science courses and only 10% of STEM graduates study it.
-    We need to improve access for all students, including groups who
-    have traditionally been underrepresented.</p>
-    <p>We believe that every K-12 Kentucky student should have the opportunity to learn computer science in school.</p>
-  <p>Our mission is to make high-quality computer science an integral part of the educational experience of all K-12
-    students and teachers and to support student pathways to college and career success.</p>
+    <!-- dividing bar -->
+    <div class="container mx-auto bg-secondary p-3"><h1 class="text-secondary">Kentucky Computer Science Pledge</h1></div>
+    <!-- main div -->
+    <div class="mx-auto container bg-light p-4">    
+       <h1>Kentucky Computer Science Pledge</h1>
+        <p>Computer science drives job growth and innovation throughout our
+        economy and society. Computing occupations are the number 1
+        source of all new wages in the U.S. and make up over half of all
+        projected new jobs in STEM fields, making Computer Science one of
+        the most in-demand college degrees. And computing is used all
+        around us and in virtually every field. It’s foundational knowledge
+        that all students need. But computer science is marginalized
+        throughout education. Only 45% of U.S. high schools teach any
+        computer science courses and only 10% of STEM graduates study it.
+        We need to improve access for all students, including groups who
+        have traditionally been underrepresented.</p>
+        <p>We believe that every K-12 Kentucky student should have the opportunity to learn computer science in school.</p>
+      <p>Our mission is to make high-quality computer science an integral part of the educational experience of all K-12
+        students and teachers and to support student pathways to college and career success.</p>
 
-  <h2>What You Can Do</h2>
-  <p class="lead">Wondering what you can do to support computer science Kentucky? Here are a few suggestions.</p>
-  <ul>
-    <li>Nominate a teacher for a professional learning scholarship: <a
-        href="www.code.org/nominate">www.code.org/nominate</a></li>
-    <li>Send a letter:
+      <h2>What You Can Do</h2>
+      <p class="lead">Wondering what you can do to support computer science Kentucky? Here are a few suggestions.</p>
       <ul>
-        <li>To your school/district asking them to expand computer science offerings at every grade level</li>
-        <li>To your elected officials asking them to support computer science education policy in Kentucky</li>
+        <li>Nominate a teacher for a professional learning scholarship: <a
+            href="www.code.org/nominate">www.code.org/nominate</a></li>
+        <li>Send a letter:
+          <ul>
+            <li>To your school/district asking them to expand computer science offerings at every grade level</li>
+            <li>To your elected officials asking them to support computer science education policy in Kentucky</li>
+          </ul>
+        </li>
+        <li>Visit <a href="www.code.org/promote/KY">www.code.org/promote/KY</a> to learn more about supporting computer
+          science in your state.</li>
+        <li>Do an #HourofCode or host an #HourofCode event.</li>
+        <li>Join CSforKY in its mission to provide every K-12 student the opportunity to learn computer science in school.
+        </li>
+        <li>Take the #CSforKY pledge below</li>
       </ul>
-    </li>
-    <li>Visit <a href="www.code.org/promote/KY">www.code.org/promote/KY</a> to learn more about supporting computer
-      science in your state.</li>
-    <li>Do an #HourofCode or host an #HourofCode event.</li>
-    <li>Join CSforKY in its mission to provide every K-12 student the opportunity to learn computer science in school.
-    </li>
-    <li>Take the #CSforKY pledge below</li>
-  </ul>
-  <br>
-    <cms:set submit_success="<cms:get_flash 'submit_success' />" />
-    <cms:if submit_success >
-        <h4>Thank you for supporting CS for all KY students!</h4>
-    </cms:if>
+      <br>
+    <form action="" method="POST" class="border border-primary rounded p-3">    
+        <p class="lead text-primary"><i class="fas fa-hand-paper"></i> I hereby pledge to support computer science for all Kentucky students.</p> 
+     
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname" id="fname" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lname"class="form-control">
+                </div>
+            </div>
+        </div> <!-- end name row -->
+        <div class="row ">
+          <div class="col-md-6">
+              <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" class="form-control">
+              </div>
+              <div class="form-check form-check-inline">
+                <span class="form-text mr-2">Would you like to join our mailing list?</span>
+                <input class="form-check-input" type="radio" name="mailinglist" id="yesToJoin" value="yes">
+                <label class="form-check-label" for="yesToJoin">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="mailinglist" id="noToJoin" value="no">
+                <label class="form-check-label" for="noToJoin">No</label>
+              </div>
+          </div> <!-- end left column -->
+          <div class="col-md-6">
+            <div class="form-group">          
+                <label for="county">Select your county / school district</label>
+                <select name="county" id="county" class="form-control" onchange="setCounty()">
+                    <option value="none">---select one---</option>
+                    <option value="Adair">Adair</option>
+                    <option value="Allen">Allen</option>
+                    <option value="Anderson">Anderson</option>
+                    <option value="Ballard">Ballard</option>
+                    <option value="Barren">Barren/Glasgow/Caverna</option>
+                    <option value="Bath">Bath</option>
+                    <option value="Bell">Bell/Middlesboro/Pineville</option>
+                    <option value="Boone">Boone/Walton-Verona</option>
+                    <option value="Bourbon">Bourbon/Paris</option>
+                    <option value="Boyd">Boyd/Fairview/Ashland</option>
+                    <option value="Boyle">Boyle/Danville/KSD</option>
+                    <option value="Bracken">Bracken/Augusta</option>
+                    <option value="Breathitt">Breathitt/Jackson</option>
+                    <option value="Breckinridge">Breckinridge/Cloverport</option>
+                    <option value="Outside KY">Bullitt</option>
+                    <option value="Butler">Butler</option>
+                    <option value="Caldwell">Caldwell</option>
+                    <option value="Calloway">Calloway/Murray</option>
+                    <option value="Campbell">Campbell/Bellevue/Dayton/FtThomas</option>
+                    <option value="Campbell">Campbell/NewportSilverGrove/Southgate</option>
+                    <option value="Carlisle">Carlisle</option>
+                    <option value="Carroll">Carroll</option>
+                    <option value="Carter">Carter</option>
+                    <option value="Casey">Casey</option>
+                    <option value="Christian">Christian</option>
+                    <option value="Clark">Clark</option>
+                    <option value="Clay">Clay</option>
+                    <option value="Clinton">Clinton</option>
+                    <option value="Crittenden">Crittenden</option>
+                    <option value="Cumberland">Cumberland</option>
+                    <option value="Daviess">Daviess/Owensboro</option>
+                    <option value="Edmonson">Edmonson</option>
+                    <option value="Elliott">Elliott</option>
+                    <option value="Estill">Estill</option>
+                    <option value="Fayette">Fayette</option>
+                    <option value="Fleming">Fleming</option>
+                    <option value="Floyd">Floyd</option>
+                    <option value="Franklin">Franklin/Frankfort</option>
+                    <option value="Fulton">Fulton</option>
+                    <option value="Gallatin">Gallatin</option>
+                    <option value="Garrard">Garrard</option>
+                    <option value="Grant">Grant/Williamstown</option>
+                    <option value="Graves">Graves/Mayfield</option>
+                    <option value="Grayson">Grayson</option>
+                    <option value="Green">Green</option>
+                    <option value="Greenup">Greenup/Raceland-Worthington/Russell</option>
+                    <option value="Hancock">Hancock</option>
+                    <option value="Hardin">Hardin/WestPoint/Elizabethtown</option>
+                    <option value="Harlan">Harlan</option>
+                    <option value="Harrison">Harrison</option>
+                    <option value="Hart">Hart</option>
+                    <option value="Henderson">Henderson</option>
+                    <option value="Henry">Henry/Eminence</option>
+                    <option value="Hickman">Hickman</option>
+                    <option value="Hopkins">Hopkins/DawsonSprings</option>
+                    <option value="Jackson">Jackson</option>
+                    <option value="Jefferson">Jefferson/Anchorage/KSB</option>
+                    <option value="Jessamine">Jessamine</option>
+                    <option value="Johnson">Johnson/Paintsville</option>
+                    <option value="Kenton">Kenton/Beechwood/Covington/Erlanger/Ludlow</option>
+                    <option value="Knott">Knott</option>
+                    <option value="Knox">Knox/Barbourville</option>
+                    <option value="Larue">Larue</option>
+                    <option value="Laurel">Laurel/EastBernstadt</option>
+                    <option value="Lawrence">Lawrence</option>
+                    <option value="Lee">Lee</option>
+                    <option value="Leslie">Leslie</option>
+                    <option value="Letcher">Letcher/Jenkins</option>
+                    <option value="Lewis">Lewis</option>
+                    <option value="Lincoln">Lincoln</option>
+                    <option value="Livingston">Livingston</option>
+                    <option value="Logan">Logan/Russellville</option>
+                    <option value="Lyon">Lyon</option>
+                    <option value="McCracken">McCracken/Paducah</option>
+                    <option value="McCreary">McCreary</option>
+                    <option value="McLean">McLean</option>
+                    <option value="Madison">Madison/Berea</option>
+                    <option value="Magoffin">Magoffin</option>
+                    <option value="Marion">Marion</option>
+                    <option value="Marshall">Marshall</option>
+                    <option value="Martin">Martin</option>
+                    <option value="Mason">Mason</option>
+                    <option value="Meade">Meade</option>
+                    <option value="Menifee">Menifee</option>
+                    <option value="Mercer">Mercer/Burgin</option>
+                    <option value="Metcalfe">Metcalfe</option>
+                    <option value="Monroe">Monroe</option>
+                    <option value="Montgomery">Montgomery</option>
+                    <option value="Morgan">Morgan</option>
+                    <option value="Muhlenberg">Muhlenberg</option>
+                    <option value="Nelson">Nelson/Bardstown</option>
+                    <option value="Nicholas">Nicholas</option>
+                    <option value="Ohio">Ohio</option>
+                    <option value="Oldham">Oldham</option>
+                    <option value="Owen">Owen</option>
+                    <option value="Owsley">Owsley</option>
+                    <option value="Pendleton">Pendleton</option>
+                    <option value="Perry">Perry/Hazard</option>
+                    <option value="Pike">Pike/Pikeville</option>
+                    <option value="Powell">Powell</option>
+                    <option value="Pulaski">Pulaski/ScienceHill/Somerset</option>
+                    <option value="Robertson">Robertson</option>
+                    <option value="Rockcastle">Rockcastle</option>
+                    <option value="Rowan">Rowan</option>
+                    <option value="Russell">Russell</option>
+                    <option value="Scott">Scott</option>
+                    <option value="Shelby">Shelby</option>
+                    <option value="Simpson">Simpson</option>
+                    <option value="Spencer">Spencer</option>
+                    <option value="Taylor">Taylor/Campbellsville</option>
+                    <option value="Todd">Todd</option>
+                    <option value="Trigg">Trigg</option>
+                    <option value="Trimble">Trimble</option>
+                    <option value="Union">Union</option>
+                    <option value="Warren">Warren/BowlingGreen</option>
+                    <option value="Washington">Washington</option>
+                    <option value="Wayne">Wayne</option>
+                    <option value="Webster">Webster</option>
+                    <option value="Whitley">Whitley/Corbin/Williamsburg</option>
+                    <option value="Wolfe">Wolfe</option>
+                    <option value="Woodford">Woodford</option>
+                    <option value="none">--------------</option>
+                    <option value="Outside KY">Outside KY</option>
+                </select> 
+            </div><!-- end county -->		
+          </div> <!-- end right column -->
+        </div> <!-- end middle row -->                              
+        <div class="row ">
+            <div class="col-md-6">
+                <p>Age</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="age" id="elementary" value="elementary">
+                    <label class="form-check-label" for="elementary">
+                        11 and under
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="age" id="middle" value="middle">
+                    <label class="form-check-label" for="middle">
+                        12-14                            
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="age" id="high" value="high">
+                    <label class="form-check-label" for="high">
+                        15-19                            
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="age" id="adult" value="adult">
+                    <label class="form-check-label" for="adult">
+                        Over 19                            
+                    </label>
+                </div>
+            </div> <!-- end left col -->
+            <div class="col-md-6">
+                <p>Role</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="role" id="community" value="community">
+                    <label class="form-check-label" for="community">
+                        Community Member
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="role" id="educator" value="educator">
+                    <label class="form-check-label" for="educator">
+                        Educator
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="role" id="student" value="student">
+                    <label class="form-check-label" for="student">
+                        Student
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="role" id="parent" value="parent">
+                    <label class="form-check-label" for="parent">
+                        Parent
+                    </label>
+                </div>
+            </div> <!-- end right col -->
+        </div> <!-- end row -->
+        <button type="submit" class="btn btn-primary"><i class='fas fa-hand-paper'></i> Take the Pledge!</button>       
+      </form>
+      <div id="pledge"></div>
+    </div> 
 
-    <cms:form 
-        masterpage=k_template_name
-        mode='create'
-        enctype='multipart/form-data'
-        method='post'
-        anchor='0' 
-        class="border border-primary rounded p-3"
-        >
+   
+    // Include FusionCharts core file
+    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
 
-      <cms:if k_success >
-          <cms:set_flash name='submit_success' value='1' />
-          <cms:redirect k_page_link />
-      </cms:if>
+    // Include FusionCharts maps file
+    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"></script>
 
-      <cms:if k_error >
-          <div class="error">
-              <cms:each k_error >
-                  <br><cms:show item />
-              </cms:each>
-          </div>
-      </cms:if>
-
-      <p class="lead text-primary"><i class="fas fa-hand-paper fa-3x"></i> I hereby pledge to support computer science for all Kentucky students.</p>
-      <div class="form-group">
-          <label for="first">First Name</label>					
-          <cms:input type="bound" name="first" label="First Name" required='1' class="form-control"/>
-      </div>
-       <div class="form-group">
-       <label for="last">Last Name</label>
-          <cms:input type="bound" name="last" label="Last Name" required='1' class="form-control"/>	
-       </div>   
-       <div class="form-group">
-         <label for="email">Email</label>
-         <cms:input type="bound"
-                  name="email"
-                  label='Email'
-                  maxlength="100"
-                  validator='email'
-                  required='1'
-                  class="form-control"/>
-       </div>
-       <div class="form-group">
-         <label for="mailinglist" class="mr-2">Add me to your mailing list:</label>
-         <cms:input type="bound" name="mailinglist" class="ml-2"/>
-       </div>
-        <div class="form-group">
-          <label for="county"">Select Your County / School District</label>
-          <cms:input type="bound"
-                      name="county"                  
-                      class="form-control"/>
-        </div>
-        <div class="form-group">
-          <label for="age" class="mr-2">Age: </label>
-          <cms:input type="bound" name="age" class="ml-2"/>
-        </div>
-        <div class="form-group">
-          <label for="role" class="mr-2">Role:</label>
-          <cms:input type="bound" name="role" class="ml-2"/>
-        </div>
-       <cms:input type="submit"  name="submit" label="Ready?" value="Take the Pledge" class="btn btn-primary" />
-
-    </cms:form>
-    </div>   			
+    // Include FusionCharts Theme file
+    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+    
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
